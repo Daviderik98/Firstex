@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="stiling.css">
+        <title>My Own Web page / Your form</title>
+        <script>
+            function filledIn(){
+                let ab = document.forms["mineForm"]["group0"].value;
+                let bc = document.forms["mineForm"]["group1"].value;
+                let cd = document.forms["mineForm"]["group2"].value;
+                let de = document.forms["mineForm"]["group3"].value;
+                let ef = document.forms["mineForm"]["group4"].value;
+                if(ab == ""){
+                    alert("Everything must be filled out before you submit");
+                }
+                else if(bc == ""){
+                    alert("Everything must be filled out before you submit");
+                }
+                else if(cd == ""){
+                    alert("Everything must be filled out before you submit");
+                }
+                else if(de == ""){
+                    alert("Everything must be filled out before you submit");
+                   
+                }
+                else if(ef == ""){
+                    alert("Everything must be filled out before you submit");
+                    
+                }
+                
+            }
+        </script>
+    </head>
+    <body>
+<h1>Now that you have learned some of my personal sides and values, <br>
+how about you share some of yours? First fill in this form</h1>
+
+<form name="mineForm" onsubmit="return filledIn()">
+    <label for="group0">Enter your name:</label><br>
+    <input type="text" name="group0" placeholder="name"><br><br>
+    <label for="group1">Enter your last name:</label><br>
+    <input type="text" name="group1" placeholder="lastname"><br><br>
+    <label for="group2">Now select your username:</label><br>
+    <input type="text" name="group2" placeholder="username#12345"><br><br>
+    <label for="group3">ANd select a password for yourself</label><br>
+    <input type="password" name="group3" placeholder="*****..."><br><br>
+    <label for="group4">And write down your email</label><br>
+    <input type="email" name="group4" placeholder="example.ex2@something.something"><br><br>
+    <input type="submit" name="finisher" id="butt-on" >
+
+    <br><br><br><br>
+    <label for="testa">And also, tell something from your story(Optional)</label><br>
+    <textarea id="testa" cols="30" rows="15" placeholder="your bio..."></textarea>
+</form>
+
+    </body>
+</html>
